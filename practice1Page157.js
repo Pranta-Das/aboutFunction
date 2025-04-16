@@ -10,13 +10,33 @@ const prompt = require('prompt-sync')({sigint:true});
 
 // console.log(array);
 
-const arraysize = prompt('Enter the size of array: ');
-const arrays = [];
+// const arraysize = prompt('Enter the size of array: ');
+// const arrays = [];
 
-for(let i = 0; i<=arraysize; i++){
-    arrays[i] = prompt('Enter array value: ');
-};
-for(let i = 0; i<=arraysize; i++){
-    console.log(arrays[i])
+// for(let i = 0; i<=arraysize; i++){
+//     arrays[i] = prompt('Enter array value: ');
+// };
+// for(let i = 0; i<=arraysize; i++){
+//     console.log(arrays[i])
+// }
+// console.log(arrays[2]);
+
+
+function arrays(num){
+    const lengthOfArray = num.length;
+    console.log(lengthOfArray);
+    if(lengthOfArray%2 == 0){
+        console.log("Array length is a Even number.");
+    
+    }else{
+        console.log('array length is a odd number.');
+    }
 }
-console.log(arrays[2]);
+// arrays([4,5,6,7,8,9]);
+
+const arr = prompt("Enter your array: ");
+const sp = arr.split(" ",);
+// const leng = sp.length;
+
+console.log( arr, sp, sp[3]);
+arrays(sp);
