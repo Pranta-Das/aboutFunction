@@ -1,8 +1,6 @@
 const prompt= require('prompt-sync')({sigint:true});
 
-// function arrayCheck(arrays){
-
-// }
+// Checking array values are even or odd :
 
 // const arraySize = prompt("Enter array size: ");
 // const arrays = prompt("Enter an array with only numbers: ");
